@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{name}}</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+body{
+	background-color: #152733;
+	font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+h3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 50px;
+	color: white;
+}
+img{
+	height: 800px;
+	width: 800px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text{
+	text-align:center;	
+}	
+a{
+	text-decoration:none;
+}
+h4{
+	color: white;
+	text-align: center;
+}
+p{
+	color:white;
+	text-align: center;
+}
+.ops{
+	width: 45%;
+  margin: 0 auto;
+  background-color: #ffffff;
+	padding:10px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px #888888;
+  margin-bottom: 20px;
+}
+.top{
+	background-color:white;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+}
+
+.grid-item {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.top{
+	background-color:white;
+	padding-top:10px;
+	padding-bottom:3px;
+}
+h2{
+	margin-left:10px;
+}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="bar white wide padding card">
+    <h2><b><a href="https://text-1-Mithys-Version.mithilankanthar.repl.co/home" style="text-decoration:none;color:black">Tarius</a></b></h2>
+  </div>
+</div>
+<div class="grid-container">
+	<div class="grid-item">  
+	<h3>{{name}}</h3>
+  <div class="description">
+    <h4>About: </h4>
+    <p>{{desc}}</p>
+  </div>
+  <div class="location">
+    <h4>Location: </h4>
+    <p>{{loc}}</p>
+  </div>
+	<div class="contact">
+    <h4>Contact: </h4>
+    <p>{{contact}}</p>
+  </div>
+	<div class="contact">
+		<h4>Website:</h4>
+		<a href="{{website}}">{{website}}</a>
+	</div>
+	</div>
+	<div class="grid-item">
+		<img src="{{img}}">
+	</div>
+</div>
+</body>
+</html>
